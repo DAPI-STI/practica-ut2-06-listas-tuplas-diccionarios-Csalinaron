@@ -13,4 +13,10 @@ def unique_preserve_order(values: list[int]) -> list[int]:
     Requisito:
     - No modifiques la lista original.
     """
+    l1 = []
+    for i in values:
+        if i not in l1:
+            l1.append(i)
+    return l1
+
     raise NotImplementedError("Implementa unique_preserve_order(values)")
